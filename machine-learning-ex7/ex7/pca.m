@@ -19,8 +19,8 @@ S = zeros(n);
 % Note: When computing the covariance matrix, remember to divide by m (the
 %       number of examples).
 %
-[X_norm, mu, sigma] = featureNormalize(X);
-covariance = X_norm' * X / m;
+% [X_norm, mu, sigma] = featureNormalize(X);
+covariance = X' * X / m;
 [U, S, V] = svd(covariance);
 
 
